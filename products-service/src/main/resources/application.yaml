@@ -1,6 +1,6 @@
 spring:
   application:
-    name: products-service(eureka-client)
+    name: products-service
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:marketplace;MODE=PostgreSQL
@@ -19,8 +19,8 @@ spring:
           web-allow-others: false
 server:
   port: 0
-  servlet:
-    context-path: /products-service
+#  servlet:
+#    context-path: /products-service
 eureka:
   client:
     serviceUrl:

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: front-service
+server:
+  port: 8190
+  servlet:
+    context-path: /front-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
