@@ -5,6 +5,8 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+  server:
+    renewal-percent-threshold: 0.85
 
 #spring:
 #  cloud:

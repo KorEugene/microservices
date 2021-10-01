@@ -6,6 +6,9 @@
 
     <modules>
         <module>eureka-service</module>
+        <module>products-service</module>
+        <module>commons</module>
+        <module>front-service</module>
     </modules>
 
     <parent>
