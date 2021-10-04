@@ -34,9 +34,38 @@
                 <td>{{p.id}}</td>
                 <td>{{p.title}}</td>
                 <td>{{p.price}}</td>
+                <td>
+                    <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Удалить</button>
+                </td>
             </tr>
             </tbody>
         </table>
+
+        <div>
+            <p></p>
+            <h3>Добавить продукт</h3>
+            <form novalidate ng-submit="createProduct()">
+                <input class="form-control" type="text" placeholder="Название" ng-model="new_product.title">
+                <p></p>
+                <input class="form-control" type="number" placeholder="Цена" ng-model="new_product.price">
+                <p></p>
+                <button type="submit" class="btn btn-primary">Создать</button>
+            </form>
+        </div>
+
+        <div>
+            <p></p>
+            <h3>Изменить продукт</h3>
+            <form novalidate ng-submit="updateProduct()">
+                <input class="form-control" type="number" placeholder="ID" ng-model="updated_product.id">
+                <p></p>
+                <input class="form-control" type="text" placeholder="Название" ng-model="updated_product.title">
+                <p></p>
+                <input class="form-control" type="number" placeholder="Цена" ng-model="updated_product.price">
+                <p></p>
+                <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+            </form>
+        </div>
         <p></p>
     </div>
 
