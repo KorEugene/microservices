@@ -19,8 +19,8 @@ spring:
           web-allow-others: false
 server:
   port: 0
-#  servlet:
-#    context-path: /products-service
+  servlet:
+    context-path: /products-service
 eureka:
   client:
     serviceUrl:
